@@ -1,0 +1,150 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  content-visibility: center;
+}
+
+img {
+  width: 300px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: auto;
+}
+
+section {
+  display: flex;
+  width: 600px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+#Conteudo {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#imagem {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+#precos {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+#letreiro {
+  color: hsl(212, 21%, 14%);
+}
+
+#descontado {
+  color: hsl(158, 36%, 37%);
+  font-size: 1.7rem;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+}
+
+p {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+}
+
+#cart {
+  width: auto;
+}
+
+#botao {
+  align-items: center;
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+
+  font-size: 16px;
+
+  border: 0;
+  border-radius: 8px;
+  padding: 15px 60px 15px 60px; /*cima direita baixo esquerda*/
+
+  display: flex;
+  gap: 15px;
+  align-items: center;
+
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: hsl(158, 45%, 20%);
+}
+
+button:active {
+  background-color: hsl(158, 45%, 20%);
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #precos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+  }
+
+  #botao {
+    display: flex;
+    justify-content: center;
+  }
+
+  #precos {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <!--<img
+          src="./images/image-product-desktop.jpg"
+          alt="perfume"
+          image.png
+          id="imagem"
+        />-->
+        <img
+          srcset="
+            images/image-product-desktop.jpg 600w,
+            images/image-product-mobile.jpg  686w
+          "
+          sizes="(max-width: 600px) 686px, 300px"
+          src="images/image-product-desktop.jpg"
+          alt="A bottle of perfume"
+          id="imagem"
+        />
+
+        <div id="Conteudo">
+          <h5>P E R F U M E</h5>
+          <h1 id="letreiro">Gabrielle Essence Eau De Parfum</h1>
+          <p>
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div id="precos">
+            <h1 id="descontado">$149.99</h1>
+            <p id="desconto"><del>$169.99</del></p>
+          </div>
+
+          <div id="botao">
+            <button>
+              <img src="./images/icon-cart.svg" alt="icon cart" id="cart" />
+              <strong>Add to Cart</strong>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Eduardo Ramone</a>.
+      </div>
+    </footer>
+  </body>
+</html>
